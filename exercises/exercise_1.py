@@ -3,8 +3,15 @@
 
 def calculate_area(shape, *args):
     # Your code here
-    pass
-
+    import math
+    if shape == "square":
+        return args[0]* args[0]
+    if shape == "rectangle":
+        return args [0]* args [1]
+    if shape == "triangle":
+        return args [0]* args [1]/2
+    if shape =="circle":
+        return round(args[0]* args[0]*math.pi,2)
 # Unit tests
 import unittest
 
